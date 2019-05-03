@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @NoArgsConstructor
-public class Link {
+public class Link extends Auditable {
 
 	@Id
 	@GeneratedValue
