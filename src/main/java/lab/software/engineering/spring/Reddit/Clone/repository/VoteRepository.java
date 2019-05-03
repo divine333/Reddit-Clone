@@ -1,5 +1,11 @@
 package lab.software.engineering.spring.Reddit.Clone.repository;
 
-public interface VoteRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import lab.software.engineering.spring.Reddit.Clone.domain.Vote;
+
+
+
+public interface VoteRepository extends JpaRepository<Vote, Long>{
 
 }
