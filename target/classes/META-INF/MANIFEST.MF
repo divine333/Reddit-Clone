@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Reddit_Clone
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: PC
+Implementation-Vendor-Id: lab.software.engineering.spring
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/Reddit_Clone
+Created-By: Maven Integration for Eclipse
+
