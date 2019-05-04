@@ -1,5 +1,6 @@
 package lab.software.engineering.spring.Reddit.Clone;
 
+import org.ocpsoft.prettytime.PrettyTime;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,21 +20,24 @@ public class RedditCloneApplication {
 		SpringApplication.run(RedditCloneApplication.class, args);
 	}
 	
-	//@Bean
-	CommandLineRunner runner(LinkRepository linkRepository, CommentRepository commentRepository) {
-		return args -> {
-			Link link = new Link("Getting started2","https://love2.com");
-			linkRepository.save(link);
-			
-			
-			Comment comment = new Comment("This link is awesome1",link);
-			commentRepository.save(comment);
-			link.addComment(comment);
-		
-			System.out.println("We inserted a link and a comment");
-			System.out.println("**********************");
-			
-			
-		};
+	/*
+	 * //@Bean CommandLineRunner runner(LinkRepository linkRepository,
+	 * CommentRepository commentRepository) { return args -> { Link link = new
+	 * Link("Getting started2","https://love2.com"); linkRepository.save(link);
+	 * 
+	 * 
+	 * Comment comment = new Comment("This link is awesome1",link);
+	 * commentRepository.save(comment); link.addComment(comment);
+	 * 
+	 * System.out.println("We inserted a link and a comment");
+	 * System.out.println("**********************");
+	 * 
+	 * 
+	 * }; }
+	 */
+	
+	@Bean
+	PrettyTime prettyTime() {
+		return new PrettyTime();
 	}
 }
