@@ -6,6 +6,6 @@ import lab.software.engineering.spring.Reddit.Clone.domain.Link;
 
 public interface LinkRepository extends JpaRepository<Link, Long>{
 
-
+	
 	
 }
